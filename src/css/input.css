@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+
+/* Custom styles */
+@layer utilities {
+  /* Scrollbar */
+  .scrollbar::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: theme('colors.dark', #1a202c);
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: theme('colors.primary', #3b82f6);
+    border-radius: 9999px;
+  }
+  body{
+    margin: 0px;
+  }
+  /* Navbar link hover effect */
+  .nav-link {
+    position: relative;
+    
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    background-color: theme('colors.primary', #3b82f6);
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -0.25rem;
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+  .nav-link:hover::after, .nav-link.home-active::after {
+    width: 100%;
+  }
+  
+  /* Image hover effect */
+  .movie-img {
+    transition-property: transform;
+    transition-duration: 200ms;
+  }
+  .movie-img:hover {
+    transform: translateY(-0.5rem);
+  }
+  
+  /* Social icon hover effect */
+  .social-icon {
+    transition-property: all;
+    transition-duration: 200ms;
+  }
+  .social-icon:hover {
+    background-color: theme('colors.primary', #3b82f6);
+    color: theme('colors.light', #f8fafc);
+  }
+  
+}

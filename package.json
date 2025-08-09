@@ -1,0 +1,14 @@
+{
+  "name": "movies2",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tailwindcss -i ./src/css/input.css -o ./src/output.css --minify",
+    "dev": "tailwindcss -i ./src/css/input.css -o ./src/output.css --watch",
+    "deploy": "gh-pages -d src"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "gh-pages": "^6.1.0",
+    "tailwindcss": "^4.1.11"
+  }
+}
