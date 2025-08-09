@@ -2,7 +2,7 @@
   "name": "movies2",
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./src/css/input.css -o ./src/output.css --minify",
+    "build": "tailwindcss -i ./src/css/input.css -o ./output.css --minify",
     "dev": "npx tailwindcss -i ./src/css/input.css -o ./output.css --watch",
     "deploy": "gh-pages -d src"
   },
